@@ -25,7 +25,7 @@ const List<dynamic> styles$AppComponent = const [];
 
 class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
-  import2.Text _text_1;
+  import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -38,8 +38,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h1', parentRenderNode);
-    _text_1 = new import2.Text('');
+    import2.Text _text_1 = new import2.Text('Hello ');
     _el_0.append(_text_1);
+    _text_2 = new import2.Text('');
+    _el_0.append(_text_2);
     init(const [], null);
     return null;
   }
@@ -47,9 +49,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   @override
   void detectChangesInternal() {
     final import1.AppComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate1('Hello ', _ctx.name, '');
+    final currVal_0 = (_ctx.name ?? '');
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
