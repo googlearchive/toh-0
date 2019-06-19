@@ -1,0 +1,7 @@
+:host{
+    display: inline-block;
+}
+
+.cat-image{
+    max-width: 200px;
+}
