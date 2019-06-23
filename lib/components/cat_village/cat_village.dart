@@ -1,5 +1,5 @@
 import 'package:angular/angular.dart';
-import 'package:angular_tour_of_heroes/components/cat/cat_component.dart';
+import 'package:angular_course/components/cat/cat_component.dart';
 
 @Component(
     selector: 'cat-village',
